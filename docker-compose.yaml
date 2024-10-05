@@ -5,7 +5,7 @@ services:
     build:
       context: ./frontend
     ports:
-      - '3100:80'  # Exposing frontend on port 3000
+      - '3100:80'  # Exposing frontend on port 3100
     depends_on:
       - backend
 
@@ -13,7 +13,7 @@ services:
     build:
       context: ./backend
     ports:
-      - '4000:4000'  # Exposing backend on port 5000
+      - '4000:4000'  # Exposing backend on port 4000
     environment:
       - MONGO_URI=mongodb://mongo:27017/mydatabase  # Update with your database name
     depends_on:
