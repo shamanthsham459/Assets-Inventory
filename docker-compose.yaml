@@ -21,10 +21,8 @@ services:
 
   mongo:
     image: mongo:latest
-    ports:
-      - '27017:27017'  # Exposing MongoDB on port 27017
     volumes:
-      - mongo_data:/data/db  # Persisting MongoDB data
+      - ./mongo_data:/data/db  # Persisting MongoDB data
 
 volumes:
   mongo_data:
