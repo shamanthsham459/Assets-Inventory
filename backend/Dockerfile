@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 4000
 
 # Start the application
-CMD ["node", "index.js"]  # Update with your main file name
+CMD ["node", "app.js"]  # Update with your main file name
